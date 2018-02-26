@@ -1,4 +1,5 @@
-<h2>User Details</h2>
+<h2 align="center"><%= "#{@user.first_name.capitalize}'s Profile" %></h2>
+
 
 <dl class="dl-horizontal">
   <dt><strong>Full Name</strong></dt>
@@ -9,6 +10,7 @@
 </dl>
 
 <% if @user.stocks.size > 0 %>
+  <h3><%= "#{@user.first_name.capitalize}'s Stocks" %></h3>
   <%= render "stocks/list" %>
 <% else %>
   <p class="lead">This user is not tracking any stocks.</p>
