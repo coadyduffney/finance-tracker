@@ -54,13 +54,77 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid black;
-  color: #777;
+}
+
+footer p {
+  color: #222;
 }
 
 footer a:hover {
   color: #222;
 }
 
-footer small {
+#logo {
   float: left;
+  color: #dedfe0;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav.navbar-nav li a {
+  color: #dedfe0;
+}
+
+.nav.navbar-nav li a:hover {
+  color: #fff;
+}
+
+.dropdown-menu.dropdownText li a {
+  color: black;
+}
+
+.dropdown-menu.dropdownText li a:hover {
+  color: black;
+}
+
+.jumbotron {
+  background-color: #222;
+  margin: auto;
+  width: 80%;
+  height: 400px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.jumbotron h1,p {
+  color: #dedfe0;
+}
+
+#welcome {
+  margin-top: auto;
+  display: inline-block;
+}
+
+#welcome h1 {
+  font-size: 45px;
+}
+
+.welcomeBtn {
+  background-color: #dedfe0;
+}
+
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+    transform: scale(1.4); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
