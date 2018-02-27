@@ -1,0 +1,12 @@
+<h1>My Profile</h1>
+
+<dl>
+  <dt><strong>Full Name</strong></dt>
+  <dd><%= @user.full_name %></dd>
+  <dt><strong>Email</strong></dt>
+  <dd><%= @user.email %></dd>
+</dl>
+
+<h3>Stocks</h3>
+<%= render "stocks/list" %>
+<%= render "friends/friends_table" %>

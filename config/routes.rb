@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get "my_friends", to: "users#my_friends"
   get "search_friends", to: "users#search"
   post "add_friend", to: "users#add_friend"
-  
+  get "my_profile", to: "users#my_profile"
   resources :user_stocks, only: [:create, :destroy]
   resources :users, only: [:show]
   resources :friendships

@@ -9,6 +9,12 @@ class UsersController < ApplicationController
     @friendships = current_user.friends
   end
   
+  def my_profile
+    @user = current_user
+    @user_stocks = current_user.stocks
+    @friendships = current_user.friends
+  end
+  
   def search
     if params[:search_param].blank?
       flash.now[:danger] = "You have entered an empty search string"

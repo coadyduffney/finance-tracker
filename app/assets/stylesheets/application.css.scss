@@ -49,3 +49,18 @@
 tr.spaceUnder>td {
   padding-bottom: 7px;
 }
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid black;
+  color: #777;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
